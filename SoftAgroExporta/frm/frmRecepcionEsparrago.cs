@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SoftAgroExporta
 {
-    public partial class frmLogin : Form
+    public partial class frmRecepcionEsparrago : Form
     {
-        public frmLogin()
+        public frmRecepcionEsparrago()
         {
             InitializeComponent();
         }

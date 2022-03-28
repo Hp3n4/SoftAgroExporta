@@ -46,6 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidad\clsTipoParihuela.cs" />
+    <Compile Include="Entidad\clsTipoJaba.cs" />
+    <Compile Include="Entidad\clsLogin.cs" />
+    <Compile Include="Datos\clsUsuarioDatos.cs" />
+    <Compile Include="Datos\clsTipoJabaDatos.cs" />
+    <Compile Include="Datos\clsChoferesDatos.cs" />
+    <Compile Include="Conexion\clsConexionBd.cs" />
+    <Compile Include="frm\frmInputbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmInputbox.Designer.cs">
+      <DependentUpon>frmInputbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmRecepcionEsparrago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmRecepcionEsparrago.Designer.cs">
+      <DependentUpon>frmRecepcionEsparrago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm\frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm\frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +79,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm\frmInputbox.resx">
+      <DependentUpon>frmInputbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmRecepcionEsparrago.resx">
+      <DependentUpon>frmRecepcionEsparrago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm\frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +99,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,9 +115,64 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Datos\" />
-    <Folder Include="Entidad\" />
     <Folder Include="rpt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CerrarForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo196x90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balanza %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar 32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar 24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar 16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo-documento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
